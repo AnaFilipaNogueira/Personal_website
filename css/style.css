@@ -3464,6 +3464,18 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+.navbar-logo {
+  height: 40px;        /* Controls vertical size */
+  width: auto;         /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures clean scaling */
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8456,7 +8468,8 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 60%;
+          height: auto;
+          width: 54%;
           position: relative;
           z-index: -1; }
           .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
@@ -8517,7 +8530,7 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 600;
-          font-size: 14px;
+          font-size: 20px;
           letter-spacing: 3px;
           text-transform: uppercase;
           color: #ffbd39; }
@@ -8540,7 +8553,7 @@ h1, h2, h3, h4, h5,
             .owl-carousel.home-slider .slider-item .slider-text h1 {
               font-size: 40px; } }
         .owl-carousel.home-slider .slider-item .slider-text h2 {
-          font-size: 30px;
+          font-size: 28px;
           font-weight: 400; }
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h2 {
@@ -8805,15 +8818,16 @@ h1, h2, h3, h4, h5,
   border-radius: 5px; }
   .resume-wrap .date {
     font-weight: 900;
-    font-size: 26px;
+    font-size: 20px;
     color: #ffbd39; }
   .resume-wrap h2 {
-    font-size: 26px; }
+    font-size: 24px; }
   .resume-wrap .position {
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase; }
+    letter-spacing: 1px;
+    /* text-transform: uppercase;  */
+  }
 
 .services-1 {
   margin-bottom: 40px;
@@ -9082,7 +9096,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 10px 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9401,7 +9415,7 @@ textarea.form-control {
     border-radius: 50%; }
     .contact-section .box .icon span {
       color: #ffbd39;
-      font-size: 30px; }
+      font-size: 45px; }
   .contact-section .box h3 {
     font-size: 17px;
     font-weight: 500;
